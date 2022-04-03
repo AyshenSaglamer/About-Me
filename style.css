@@ -3,3 +3,42 @@ body{
     font-family: fantasy;
     font-size: larger;
     }
+    .page {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .header {
+        background-color: #B2D6FF;
+      }
+      
+      .main {
+        background-color: #b48fe4;
+        height: 600px;
+      }
+      
+      .footer {
+        background-color: #cc819e;
+      }
+      @media only screen and (min-width: 401px) and (max-width: 960px) {
+        .page
+        .header
+        .main
+        .body
+        .footer {
+          width: 50%;
+        }
+      
+      @media only screen and (min-width: 961px) {
+        .page {
+          width: 960px;
+          margin: 0 auto;
+        }
+        .main
+        .footer 
+        .body{
+          width: 33.3%;
+        }
+        .header {
+          height: 400px;
+      }
